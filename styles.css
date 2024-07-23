@@ -1,0 +1,429 @@
+/* Basic Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    background-color: rgb(34, 37, 49);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+/* Navigation Toggle Styles */
+.nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Hamburger Menu Styles */
+.hamburger {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    transition: transform 0.3s ease;
+}
+
+.hamburger::before {
+    transform: translateY(-8px);
+}
+
+.hamburger::after {
+    transform: translateY(8px);
+}
+
+/* Navigation Styles */
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+    justify-content: center;
+}
+
+nav ul a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    position: relative;
+}
+
+nav ul a::before {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width 0.3s;
+}
+
+nav ul a:hover::before {
+    width: 100%;
+}
+
+/* Section Styles */
+section {
+    padding: 40px 20px;
+    margin: 60px 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 1.2rem;
+}
+
+img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Layout Styles */
+nav, section {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Button Styles */
+button {
+    background-color: #ff9800;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #e68900;
+}
+
+/* Mitigation Navigation Styles */
+#mitigation nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Quiz Styles */
+#quiz {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#quiz-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#question {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+#choices {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.choice-btn {
+    background-color: #ff9800;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.choice-btn:hover {
+    background-color: #e68900;
+}
+
+#restart-btn {
+    background-color: #4CAF50;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#restart-btn:hover {
+    background-color: #45a049;
+}
+
+#score {
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+/* Game Container Styles */
+#game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+#disaster-selection, #budget-info, #mitigation-options, #selected-methods, #result {
+    width: 80%;
+    max-width: 600px;
+    margin: 10px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#methods-list, #selected-methods-list {
+    list-style: none;
+    padding: 0;
+}
+
+#methods-list li, #selected-methods-list li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+/* Finalize Plan Button Styles */
+#finalize-plan {
+    background-color: #4CAF50;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#finalize-plan:hover {
+    background-color: #45a049;
+}
+
+/* Result and Restart Game Styles */
+#result {
+    display: none;
+}
+
+#restart-game {
+    background-color: #FF0000;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+    display: none;
+}
+
+#restart-game:hover {
+    background-color: #CC0000;
+}
+
+/* Dropdown Styles */
+.styled-dropdown {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    font-size: 1.2rem;
+    border: 2px solid #ff9800;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #333;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    appearance: none;
+    position: relative;
+    z-index: 1; /* Ensure dropdown is above the off-screen menu */
+}
+
+.styled-dropdown option {
+    padding: 10px;
+}
+
+.styled-dropdown:focus {
+    border-color: #e68900;
+    box-shadow: 0 0 5px rgba(255, 152, 0, 0.5);
+}
+
+/* Disaster Selection Styles */
+#disaster-selection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Page Section Visibility */
+.page-section {
+    display: none;
+}
+
+.page-section.active {
+    display: block;
+}
+
+/* Off-Screen Menu Styles */
+.off-screen-menu {
+    display: none;
+}
+
+/* Responsive Design for Tablet/Mobile <= 800px */
+@media (max-width: 800px) {
+    .off-screen-menu {
+        background-color: rgb(34, 37, 49);
+        height: 100vh;
+        width: 100%;
+        max-width: 450px;
+        position: fixed;
+        top: 0;
+        right: -450px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 1rem;
+        transition: .3s ease;
+        z-index: 2;
+    }
+
+    .off-screen-menu.active {
+        right: 0;
+    }
+
+    .off-screen-menu ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .off-screen-menu li {
+        margin: 10px 0;
+    }
+
+    .ham-menu {
+        height: 50px;
+        width: 50px;
+        margin-left: auto;
+        position: relative;
+        z-index: 2;
+    }
+
+    .ham-menu span {
+        height: 5px;
+        width: 100%;
+        background-color: #6F86FF;
+        border-radius: 25px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: .3s ease;
+    }
+
+    .ham-menu span:nth-child(1) {
+        top: 25%;
+    }
+
+    .ham-menu span:nth-child(3) {
+        top: 75%;
+    }
+
+    .ham-menu.active span:nth-child(1) {
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+
+    .ham-menu.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .ham-menu.active span:nth-child(3) {
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(-45deg);
+    }
+
+    .top-navbar {
+        display: none;
+    }
+    
+    img {
+        max-width: 100%;
+    }
+}
