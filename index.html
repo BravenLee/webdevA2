@@ -11,7 +11,7 @@
 
     <!-- Link to stylesheet and script-->
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+    <script src="script.js"></script>
 </head>
 <body>
     <!-- Header section with navigation -->
@@ -42,253 +42,253 @@
         </nav>
     </header>
 
-    <!-- Home section -->
-    <section id="home" class="page-section">
-        <h2>Welcome to Natural Disasters Info</h2>
-        <p>Natural disasters are severe and extreme weather or geological events that can cause significant damage to the environment, property, and human life. Here are some common types of natural disasters and their explanations</p>
+<!-- Home section -->
+<section id="home" class="page-section">
+    <h2>Welcome to Natural Disasters Info</h2>
+    <p>Natural disasters are severe and extreme weather or geological events that can cause significant damage to the environment, property, and human life. Here are some common types of natural disasters and their explanations</p>
+    <figure>
+        <img src="images/qr.png" alt="QR Code">
+    </figure>
+</section>
+
+<!-- Types of natural disasters section -->
+<section id="types" class="page-section">
+    <h2>Types of Natural Disasters</h2>
+    <nav>
+        <ul>
+            <li><button id="page1btn">1</button></li>
+            <li><button id="page2btn">2</button></li>
+            <li><button id="page3btn">3</button></li>
+        </ul>
+    </nav>
+    <!-- Earthquake type page -->
+    <div class="typepage" id="type1">
+        <article>
+            <h3>Earthquakes</h3>
+            <p>Sudden shaking of the ground caused by the movement of tectonic plates beneath the Earth's surface.</p>
+        </article>
         <figure>
-            <img src="images/qr.png" alt="QR Code">
+            <img src="images/earthquake.jpg" alt="Earthquake image">
         </figure>
-    </section>
+    </div>
+    <!-- Flood type page -->
+    <div class="typepage" id="type2">
+        <article>
+            <h3>Floods</h3>
+            <p>Overflow of water onto normally dry land, caused by heavy rainfall, river overflow, or dam failure.</p>
+        </article>
+        <figure>
+            <img src="images/flood.jpg" alt="Flood image">
+        </figure>
+    </div>
+    <!-- Volcanic Eruptions type page -->
+    <div class="typepage" id="type3">
+        <article>
+            <h3>Volcanic Eruptions</h3>
+            <p>Ejection of magma, ash, and gases from a volcano.</p>
+        </article>
+        <figure>
+            <img src="images/volcano.avif" alt="Volcano image">
+        </figure>
+    </div>
+</section>
 
-    <!-- Types of natural disasters section -->
-    <section id="types" class="page-section">
-        <h2>Types of Natural Disasters</h2>
-        <nav>
-            <ul>
-                <li><button id="page1btn">1</button></li>
-                <li><button id="page2btn">2</button></li>
-                <li><button id="page3btn">3</button></li>
-            </ul>
-        </nav>
-        <!-- Earthquake type page -->
-        <div class="typepage" id="type1">
-            <article>
-                <h3>Earthquakes</h3>
-                <p>Sudden shaking of the ground caused by the movement of tectonic plates beneath the Earth's surface.</p>
-            </article>
+<!-- Mitigation strategies section -->
+<section id="mitigation" class="page-section">
+    <h3>Earthquake Mitigation</h3>
+    <h4>Long Term</h4>
+    <nav>
+        <ul>
+            <li><button id="eqm1btn">1</button></li>
+            <li><button id="eqm2btn">2</button></li>
+            <li><button id="eqm3btn">3</button></li>
+            <li><button id="eqm4btn">4</button></li>
+        </ul>
+    </nav>
+    <!-- Long term mitigation methods for earthquakes -->
+    <div class="eqmitigationlt" id="lt_eqm1">
+        <article>
+            <h3>Building Codes and Standards</h3>
+            <p>Develop and enforce building codes that require earthquake-resistant designs. Regular updates ensure new buildings adhere to the latest safety standards.</p>
             <figure>
-                <img src="images/earthquake.jpg" alt="Earthquake image">
+                <img src="images/eqres.webp" alt="Earthquake Resistance">
             </figure>
-        </div>
-        <!-- Flood type page -->
-        <div class="typepage" id="type2">
-            <article>
-                <h3>Floods</h3>
-                <p>Overflow of water onto normally dry land, caused by heavy rainfall, river overflow, or dam failure.</p>
-            </article>
+        </article>
+    </div>
+    <div class="eqmitigationlt" id="lt_eqm2">
+        <article>
+            <h3>Retrofitting</h3>
+            <p>Upgrade existing structures to meet current earthquake safety standards. This may include adding shear walls, reinforcing foundations, and installing base isolators.</p>
             <figure>
-                <img src="images/flood.jpg" alt="Flood image">
+                <img src="images/sesisolation.webp" alt="Seismic Isolation">
             </figure>
-        </div>
-        <!-- Volcanic Eruptions type page -->
-        <div class="typepage" id="type3">
-            <article>
-                <h3>Volcanic Eruptions</h3>
-                <p>Ejection of magma, ash, and gases from a volcano.</p>
-            </article>
+        </article>
+    </div>
+    <div class="eqmitigationlt" id="lt_eqm3">
+        <article>
+            <h3>Land Use Planning</h3>
+            <p>Implement zoning regulations that prevent construction in high-risk areas, such as near fault lines.</p>
             <figure>
-                <img src="images/volcano.avif" alt="Volcano image">
+                <img src="images/zoningreg.png" alt="Zoning Regulation">
             </figure>
-        </div>
-    </section>
+        </article>
+    </div>
+    <div class="eqmitigationlt" id="lt_eqm4">
+        <article>
+            <h3>Seismic Monitoring and Research</h3>
+            <p>Invest in seismic networks to detect and analyze earthquakes, and support research on prediction and mitigation.</p>
+            <figure>
+                <img src="images/eqanalyze.png" alt="Earthquake analysis">
+            </figure>
+        </article>
+    </div>
 
-    <!-- Mitigation strategies section -->
-    <section id="mitigation" class="page-section">
-        <h3>Earthquake Mitigation</h3>
-        <h4>Long Term</h4>
-        <nav>
-            <ul>
-                <li><button id="eqm1btn">1</button></li>
-                <li><button id="eqm2btn">2</button></li>
-                <li><button id="eqm3btn">3</button></li>
-                <li><button id="eqm4btn">4</button></li>
+    <h4>Short Term</h4>
+    <nav>
+        <ul>
+            <li><button id="eqm5btn">1</button></li>
+            <li><button id="eqm6btn">2</button></li>
+        </ul>
+    </nav>
+    <!-- Short term mitigation methods for earthquakes -->
+    <div class="eqmitigationst" id="st_eqm1">
+        <article>
+            <h3>Early Warning Systems</h3>
+            <p>Deploy systems that detect early seismic waves and provide advance warning to residents and businesses.</p>
+            <figure>
+                <img src="images/detecteq.webp" alt="Earthquake Detection">
+            </figure>
+        </article>
+    </div>
+    <div class="eqmitigationst" id="st_eqm2">
+        <article>
+            <h3>Public Education and Preparedness</h3>
+            <p>Conduct drills and public awareness campaigns on earthquake safety measures, including "Drop, Cover, and Hold On" techniques.</p>
+            <figure>
+                <img src="images/eqdrill.png" alt="Earthquake Drill">
+            </figure>
+        </article>
+    </div>
+
+    <h3>Flood Mitigation</h3>
+    <h4>Long Term</h4>
+    <nav>
+        <ul>
+            <li><button id="floodm1btn">1</button></li>
+            <li><button id="floodm2btn">2</button></li>
+            <li><button id="floodm3btn">3</button></li>
+        </ul>
+    </nav>
+    <!-- Long term mitigation methods for floods -->
+    <div class="floodmitigationlt" id="lt_floodm1">
+        <article>
+            <h3>Floodplain Management</h3>
+            <p>Implement regulations to restrict development in flood-prone areas and preserve natural floodplains.</p>
+            <figure>
+                <img src="images/floodplain.png" alt="Floodplain">
+            </figure>
+        </article>
+    </div>
+    <div class="floodmitigationlt" id="lt_floodm2">
+        <article>
+            <h3>Infrastructure Improvements</h3>
+            <p>Build and maintain levees, dams, floodwalls, and improved drainage systems.</p>
+            <figure>
+                <img src="images/floodcontrol.png" alt="Flood Control methods">
+            </figure>
+        </article>
+    </div>
+    <div class="floodmitigationlt" id="lt_floodm3">
+        <article>
+            <h3>Erosion Control</h3>
+            <p>Use techniques like planting vegetation and stabilizing riverbanks to reduce soil erosion.</p>
+            <figure>
+                <img src="images/soilerosioncontrol.webp" alt="Soil Erosion Control">
+            </figure>
+        </article>
+    </div>
+
+    <h4>Short Term</h4>
+    <nav>
+        <ul>
+            <li><button id="floodm4btn">1</button></li>
+            <li><button id="floodm5btn">2</button></li>
+        </ul>
+    </nav>
+    <!-- Short term mitigation methods for floods -->
+    <div class="floodmitigationst" id="st_floodm1">
+        <article>
+            <h3>Early Warning Systems</h3>
+            <p>Develop systems to forecast floods and issue timely warnings to the public.</p>
+            <figure>
+                <img src="images/floodwarning.jpg" alt="Flood Forecast and Warning System">
+            </figure>
+        </article>
+    </div>
+    <div class="floodmitigationst" id="st_floodm2">
+        <article>
+            <h3>Public Education and Preparedness</h3>
+            <p>Educate communities on flood risks, evacuation routes, and emergency plans.</p>
+            <figure>
+                <img src="images/floodevacuation.png" alt="Flood Evacuation">
+            </figure>
+        </article>
+    </div>
+</section>
+
+<!-- Quiz section -->
+<section id="quiz" class="page-section">
+    <h2>Natural Disasters Quiz</h2>
+    <div id="quiz-container">
+        <p id="question"></p>
+        <div id="choices"></div>
+        <button id="restart-btn">Restart</button>
+    </div>
+</section>
+
+<!-- Game section -->
+<section id="game" class="page-section">
+    <h2>Disaster Mitigation Planning Game</h2>
+    <div id="game-container">
+        <div id="disaster-selection">
+            <h3>Select a Disaster</h3>
+            <select id="disaster-dropdown" class="styled-dropdown">
+                <option value="earthquake">Earthquake</option>
+                <option value="flood">Flood</option>
+                <option value="volcano">Volcano</option>
+            </select>
+        </div>
+        <div id="budget-info">
+            <h3>Budget: $<span id="budget">10000</span></h3>
+        </div>
+        <div id="mitigation-options">
+            <h3>Mitigation Methods</h3>
+            <ul id="methods-list">
+                <!-- Mitigation methods will be dynamically added here -->
             </ul>
-        </nav>
-        <!-- Long term mitigation methods for earthquakes -->
-        <div class="eqmitigationlt" id="lt_eqm1">
-            <article>
-                <h3>Building Codes and Standards</h3>
-                <p>Develop and enforce building codes that require earthquake-resistant designs. Regular updates ensure new buildings adhere to the latest safety standards.</p>
-                <figure>
-                    <img src="images/eqres.webp" alt="Earthquake Resistance">
-                </figure>
-            </article>
         </div>
-        <div class="eqmitigationlt" id="lt_eqm2">
-            <article>
-                <h3>Retrofitting</h3>
-                <p>Upgrade existing structures to meet current earthquake safety standards. This may include adding shear walls, reinforcing foundations, and installing base isolators.</p>
-                <figure>
-                    <img src="images/sesisolation.webp" alt="Seismic Isolation">
-                </figure>
-            </article>
-        </div>
-        <div class="eqmitigationlt" id="lt_eqm3">
-            <article>
-                <h3>Land Use Planning</h3>
-                <p>Implement zoning regulations that prevent construction in high-risk areas, such as near fault lines.</p>
-                <figure>
-                    <img src="images/zoningreg.png" alt="Zoning Regulation">
-                </figure>
-            </article>
-        </div>
-        <div class="eqmitigationlt" id="lt_eqm4">
-            <article>
-                <h3>Seismic Monitoring and Research</h3>
-                <p>Invest in seismic networks to detect and analyze earthquakes, and support research on prediction and mitigation.</p>
-                <figure>
-                    <img src="images/eqanalyze.png" alt="Earthquake analysis">
-                </figure>
-            </article>
-        </div>
-
-        <h4>Short Term</h4>
-        <nav>
-            <ul>
-                <li><button id="eqm5btn">1</button></li>
-                <li><button id="eqm6btn">2</button></li>
+        <div id="selected-methods">
+            <h3>Selected Methods</h3>
+            <ul id="selected-methods-list">
+                <!-- Selected methods will be shown here -->
             </ul>
-        </nav>
-        <!-- Short term mitigation methods for earthquakes -->
-        <div class="eqmitigationst" id="st_eqm1">
-            <article>
-                <h3>Early Warning Systems</h3>
-                <p>Deploy systems that detect early seismic waves and provide advance warning to residents and businesses.</p>
-                <figure>
-                    <img src="images/detecteq.webp" alt="Earthquake Detection">
-                </figure>
-            </article>
+            <button id="finalize-plan">Finalize Plan</button>
+            <button id="restart-game">Restart Game</button>
         </div>
-        <div class="eqmitigationst" id="st_eqm2">
-            <article>
-                <h3>Public Education and Preparedness</h3>
-                <p>Conduct drills and public awareness campaigns on earthquake safety measures, including "Drop, Cover, and Hold On" techniques.</p>
-                <figure>
-                    <img src="images/eqdrill.png" alt="Earthquake Drill">
-                </figure>
-            </article>
+        <div id="result">
+            <h3>Result</h3>
+            <p id="result-text"></p>
         </div>
+    </div>
+</section>
 
-        <h3>Flood Mitigation</h3>
-        <h4>Long Term</h4>
-        <nav>
-            <ul>
-                <li><button id="floodm1btn">1</button></li>
-                <li><button id="floodm2btn">2</button></li>
-                <li><button id="floodm3btn">3</button></li>
-            </ul>
-        </nav>
-        <!-- Long term mitigation methods for floods -->
-        <div class="floodmitigationlt" id="lt_floodm1">
-            <article>
-                <h3>Floodplain Management</h3>
-                <p>Implement regulations to restrict development in flood-prone areas and preserve natural floodplains.</p>
-                <figure>
-                    <img src="images/floodplain.png" alt="Floodplain">
-                </figure>
-            </article>
-        </div>
-        <div class="floodmitigationlt" id="lt_floodm2">
-            <article>
-                <h3>Infrastructure Improvements</h3>
-                <p>Build and maintain levees, dams, floodwalls, and improved drainage systems.</p>
-                <figure>
-                    <img src="images/floodcontrol.png" alt="Flood Control methods">
-                </figure>
-            </article>
-        </div>
-        <div class="floodmitigationlt" id="lt_floodm3">
-            <article>
-                <h3>Erosion Control</h3>
-                <p>Use techniques like planting vegetation and stabilizing riverbanks to reduce soil erosion.</p>
-                <figure>
-                    <img src="images/soilerosioncontrol.webp" alt="Soil Erosion Control">
-                </figure>
-            </article>
-        </div>
-
-        <h4>Short Term</h4>
-        <nav>
-            <ul>
-                <li><button id="floodm4btn">1</button></li>
-                <li><button id="floodm5btn">2</button></li>
-            </ul>
-        </nav>
-        <!-- Short term mitigation methods for floods -->
-        <div class="floodmitigationst" id="st_floodm1">
-            <article>
-                <h3>Early Warning Systems</h3>
-                <p>Develop systems to forecast floods and issue timely warnings to the public.</p>
-                <figure>
-                    <img src="images/floodwarning.jpg" alt="Flood Forecast and Warning System">
-                </figure>
-            </article>
-        </div>
-        <div class="floodmitigationst" id="st_floodm2">
-            <article>
-                <h3>Public Education and Preparedness</h3>
-                <p>Educate communities on flood risks, evacuation routes, and emergency plans.</p>
-                <figure>
-                    <img src="images/floodevacuation.png" alt="Flood Evacuation">
-                </figure>
-            </article>
-        </div>
-    </section>
-
-    <!-- Quiz section -->
-    <section id="quiz">
-        <h2>Natural Disasters Quiz</h2>
-        <div id="quiz-container">
-            <p id="question"></p>
-            <div id="choices"></div>
-            <button id="restart-btn">Restart</button>
-        </div>
-    </section>
-
-    <!-- Game section -->
-    <section id="game" class="page-section">
-        <h2>Disaster Mitigation Planning Game</h2>
-        <div id="game-container">
-            <div id="disaster-selection">
-                <h3>Select a Disaster</h3>
-                <select id="disaster-dropdown" class="styled-dropdown">
-                    <option value="earthquake">Earthquake</option>
-                    <option value="flood">Flood</option>
-                    <option value="volcano">Volcano</option>
-                </select>
-            </div>
-            <div id="budget-info">
-                <h3>Budget: $<span id="budget">10000</span></h3>
-            </div>
-            <div id="mitigation-options">
-                <h3>Mitigation Methods</h3>
-                <ul id="methods-list">
-                    <!-- Mitigation methods will be dynamically added here -->
-                </ul>
-            </div>
-            <div id="selected-methods">
-                <h3>Selected Methods</h3>
-                <ul id="selected-methods-list">
-                    <!-- Selected methods will be shown here -->
-                </ul>
-                <button id="finalize-plan">Finalize Plan</button>
-                <button id="restart-game">Restart Game</button>
-            </div>
-            <div id="result">
-                <h3>Result</h3>
-                <p id="result-text"></p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact section -->
-    <section id="contact" class="page-section">
-        <h2>Contact Us</h2>
-        <p>Email: contact@naturaldisastersinfo.com</p>
-        <p>Phone: (123) 456-7890</p>
-        <p>Address: 123 Disaster St, Safety City, SafeCountry</p>
-    </section>
+<!-- Contact section -->
+<section id="contact" class="page-section">
+    <h2>Contact Us</h2>
+    <p>Email: contact@naturaldisastersinfo.com</p>
+    <p>Phone: (123) 456-7890</p>
+    <p>Address: 123 Disaster St, Braven City, BraveCountry</p>
+</section>
 
     <!-- Footer section -->
     <footer>
